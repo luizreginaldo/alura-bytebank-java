@@ -11,6 +11,6 @@ public class TestaBanco {
 		contaA.deposita(100);
 		contaA.titular = clienteA;
 		System.out.println(contaA.titular.nome);
-		System.out.println(contaA.saldo);
+		System.out.println(contaA.getSaldo());
 	}
 }

@@ -4,7 +4,7 @@ public class TestaContaSemCliente {
 	public static void main(String[] args) {
 		
 		Conta contaA = new Conta();
-		System.out.println(contaA.saldo);
+		System.out.println(contaA.getSaldo());
 		System.out.println(contaA.titular); //null
 //		System.out.println(contaA.titular.nome); //NullPointerException
 		

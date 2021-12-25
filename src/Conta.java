@@ -10,4 +10,11 @@ public class Conta {
 		this.saldo += valor;
 	}
 	
+	public boolean saca(double valor) {
+		if(this.saldo >= valor) {
+			this.saldo -= valor;
+			return true;
+		}
+		return false;
+	}
 }

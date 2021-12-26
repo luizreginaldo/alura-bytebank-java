@@ -9,8 +9,8 @@ public class TestaBanco {
 		
 		Conta contaA = new Conta();
 		contaA.deposita(100);
-		contaA.titular = clienteA;
-		System.out.println(contaA.titular.nome);
+		contaA.setTitular(clienteA);
+		System.out.println(contaA.getTitular().nome);
 		System.out.println(contaA.getSaldo());
 	}
 }

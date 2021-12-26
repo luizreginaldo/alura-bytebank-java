@@ -5,13 +5,13 @@ public class TestaContaSemCliente {
 		
 		Conta contaA = new Conta();
 		System.out.println(contaA.getSaldo());
-		System.out.println(contaA.titular); //null
-//		System.out.println(contaA.titular.nome); //NullPointerException
+		System.out.println(contaA.getTitular()); //null
+//		System.out.println(contaA.getTitular().nome); //NullPointerException
 		
-		contaA.titular = new Cliente();
-		System.out.println(contaA.titular);
+		contaA.setTitular(new Cliente());
+		System.out.println(contaA.getTitular());
 		
-		contaA.titular.nome = "Cliente A";
-		System.out.println(contaA.titular.nome);
+		contaA.getTitular().nome = "Cliente A";
+		System.out.println(contaA.getTitular().nome);
 	}
 }

@@ -16,12 +16,12 @@ public class CriaConta {
 		System.out.println("primeira conta tem: " + primeiraConta.getSaldo());
 		System.out.println("segunda conta tem: " + segundaConta.getSaldo());
 		
-		System.out.println(primeiraConta.agencia);
-		System.out.println(primeiraConta.numero);
+		System.out.println(primeiraConta.getAgencia());
+		System.out.println(primeiraConta.getNumero());
 		
-		System.out.println(segundaConta.agencia);
+		System.out.println(segundaConta.getAgencia());
 		
-		segundaConta.agencia = 146;
+		segundaConta.setAgencia(146);
 		
 		System.out.println(primeiraConta);
 		System.out.println(segundaConta);

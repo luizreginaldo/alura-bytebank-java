@@ -8,9 +8,9 @@ public class TesteFuncionario {
 		funcionario.setCpf("123.456.789-10");
 		funcionario.setSalario(2600);
 		
-		funcionario.salario = 200;
-		
 		System.out.println(funcionario.getNome());
 		System.out.println(funcionario.getBonificacao());
+		
+//		funcionario.salario = 200;
 	}
 }

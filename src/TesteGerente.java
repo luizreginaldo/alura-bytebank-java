@@ -15,5 +15,7 @@ public class TesteGerente {
 		gerente.setSenha(123456);
 		
 		System.out.println(gerente.autentica(123456));
+		
+		System.out.println(gerente.getBonificacao());
 	}
 }

@@ -16,14 +16,5 @@ public class TesteReferencias {
 		
 		System.out.println(primeiraConta);
 		System.out.println(segundaConta);
-		
-		Gerente gerente = new Gerente();
-		gerente.setNome("Luiz");
-		String nome = gerente.getNome();
-		System.out.println(nome);
-		
-		Funcionario funcionario = new Gerente();
-		funcionario.setNome("Reginaldo");
-		System.out.println(funcionario.getNome());
 	}
 }

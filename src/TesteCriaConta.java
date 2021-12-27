@@ -1,5 +1,5 @@
 
-public class CriaConta {
+public class TesteCriaConta {
 	
 	public static void main(String[] args) {
 		

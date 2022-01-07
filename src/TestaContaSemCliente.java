@@ -3,7 +3,7 @@ public class TestaContaSemCliente {
 
 	public static void main(String[] args) {
 		
-		Conta contaA = new Conta(1234, 12345);
+		Conta contaA = new ContaCorrente(1234, 12345);
 		System.out.println(contaA.getSaldo());
 		System.out.println(contaA.getTitular()); //null
 //		System.out.println(contaA.getTitular().getNome()); //NullPointerException

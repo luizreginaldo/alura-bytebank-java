@@ -7,7 +7,7 @@ public class TestaBanco {
 		clienteA.setCpf("123.456.789-10");
 		clienteA.setProfissao("Engenheiro");
 		
-		Conta contaA = new Conta(1234, 12345);
+		Conta contaA = new ContaCorrente(1234, 12345);
 		contaA.deposita(100);
 		contaA.setTitular(clienteA);
 		System.out.println(contaA.getTitular().getNome());

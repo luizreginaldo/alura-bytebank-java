@@ -1,7 +1,7 @@
 
-public abstract interface Autenticavel {
+public interface Autenticavel {
 	
-	public abstract void setSenha(int senha);
+	public void setSenha(int senha);
 	
-	public abstract boolean autentica(int senha);
+	public boolean autentica(int senha);
 }

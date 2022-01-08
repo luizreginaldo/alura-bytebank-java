@@ -12,9 +12,9 @@ public class TesteGerente {
 		System.out.println(gerente.getCpf());
 		System.out.println(gerente.getSalario());
 		
-		gerente.setSenha(123456);
-		
-		System.out.println(gerente.autentica(123456));
+//		gerente.setSenha(123456);
+//		
+//		System.out.println(gerente.autentica(123456));
 		
 		System.out.println(gerente.getBonificacao());
 	}

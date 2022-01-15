@@ -8,18 +8,13 @@ public class TestaMetodo {
 		contaA.deposita(50);
 		System.out.println(contaA.getSaldo());
 		
-		boolean conseguiuRetirar = contaA.saca(20);
+		contaA.saca(20);
 		System.out.println(contaA.getSaldo());
-		System.out.println(conseguiuRetirar);
 		
 		Conta contaB = new ContaPoupanca(3, 4);
 		contaB.deposita(1000);
-		boolean sucessoTransferencia = contaB.transfere(300, contaA);
-		if(sucessoTransferencia) {
-			System.out.println("transferência com sucesso.");
-		} else {
-			System.out.println("faltou dinheiro");
-		}
+		contaB.transfere(300, contaA);
+		
 		System.out.println("saldo contaA: " + contaA.getSaldo());
 		System.out.println("saldo contaB: " + contaB.getSaldo());
 		

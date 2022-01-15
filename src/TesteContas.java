@@ -9,8 +9,17 @@ public class TesteContas {
 		ContaPoupanca contaPoupanca = new ContaPoupanca(222, 222);
 		contaPoupanca.deposita(200);
 		
-		contaCorrente.transfere(10, contaPoupanca);
-		contaCorrente.saca(10);
+		try {
+			contaCorrente.transfere(10, contaPoupanca);
+		} catch (SaldoInsuficienteException e) {
+			e.printStackTrace();
+		}
+		
+		try {
+			contaCorrente.saca(10);
+		} catch (SaldoInsuficienteException e) {
+			e.printStackTrace();
+		}
 		
 		System.out.println("C/C: " + contaCorrente.getSaldo());
 		System.out.println("C/P: " + contaPoupanca.getSaldo());

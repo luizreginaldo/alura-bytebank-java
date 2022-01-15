@@ -5,7 +5,11 @@ public class TestaSacaValoresNegativos {
 		
 		Conta conta = new ContaCorrente(7, 8);
 		conta.deposita(100);
-		conta.saca(200);
+		try {
+			conta.saca(200);
+		} catch (SaldoInsuficienteException e) {
+			e.printStackTrace();
+		}
 		System.out.println(conta.getSaldo());
 
 	}
